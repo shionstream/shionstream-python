@@ -1,0 +1,211 @@
+# coding: utf-8
+
+# flake8: noqa
+
+"""
+    ShionStream API
+
+    Modular anime streaming and metadata API built with Hono on Cloudflare Workers.
+
+    The version of the OpenAPI document: 1.0.0
+    Author: ShionStream Engineering Team
+    Contact: dev@gox.my.id
+    Website: https://gox.my.id
+
+    Generated for ShionStream API SDK.
+    Do not edit the class manually.
+"""  # noqa: E501
+
+
+__version__ = "1.0.0"
+
+# Define package exports
+__all__ = [
+    "AnimeApi",
+    "CommentsApi",
+    "DashboardApi",
+    "EpisodesApi",
+    "SampleApi",
+    "SystemApi",
+    "UploadApi",
+    "UserApi",
+    "ApiResponse",
+    "ApiClient",
+    "Configuration",
+    "OpenApiException",
+    "ApiTypeError",
+    "ApiValueError",
+    "ApiKeyError",
+    "ApiAttributeError",
+    "ApiException",
+    "HealthGet200Response",
+    "HealthGet500Response",
+    "V1AnimeGet200Response",
+    "V1AnimeGet200ResponseDataInner",
+    "V1AnimeGet200ResponsePagination",
+    "V1AnimeSlugEpisodesGet200Response",
+    "V1AnimeSlugEpisodesGet200ResponseAnime",
+    "V1AnimeSlugEpisodesGet200ResponseDataInner",
+    "V1AnimeSlugGet200Response",
+    "V1AnimeSlugGet200ResponseData",
+    "V1AnimeSlugGet200ResponseDataGenresInner",
+    "V1AnimeSlugGet200ResponseDataSchedule",
+    "V1AnimeSlugGet200ResponseDataTrendingStats",
+    "V1CommentsGet200Response",
+    "V1CommentsGet200ResponseDataInner",
+    "V1CommentsIdLikePost200Response",
+    "V1CommentsIdLikePostRequest",
+    "V1CommentsIdReportPostRequest",
+    "V1CommentsPost201Response",
+    "V1CommentsPostRequest",
+    "V1DashboardAnimeGet200Response",
+    "V1DashboardCategoriesGet200Response",
+    "V1DashboardCategoriesGet200ResponseCategoriesInner",
+    "V1DashboardCategoriesGet200ResponseGenresInner",
+    "V1DashboardEpisodesGet200Response",
+    "V1DashboardModerationGet200Response",
+    "V1DashboardModerationGet200ResponseReportsInner",
+    "V1DashboardModerationGet200ResponseReportsInnerAuthor",
+    "V1DashboardModerationGet200ResponseReportsInnerReporter",
+    "V1DashboardModerationIdPatchRequest",
+    "V1DashboardOverviewGet200Response",
+    "V1DashboardOverviewGet200ResponseNotificationsInner",
+    "V1DashboardOverviewGet200ResponseRecentActivitiesInner",
+    "V1DashboardOverviewGet200ResponseTrafficDataInner",
+    "V1DashboardRolesGet200Response",
+    "V1DashboardRolesGet200ResponseRolesInner",
+    "V1DashboardSeasonsGet200Response",
+    "V1DashboardSeasonsGet200ResponseSeasonsInner",
+    "V1DashboardStatsGet200Response",
+    "V1DashboardStatsGet200ResponseStats",
+    "V1DashboardUsersGet200Response",
+    "V1DashboardUsersGet200ResponseUsersInner",
+    "V1EpisodesIdStreamGet200Response",
+    "V1EpisodesIdStreamGet200ResponseAudioInner",
+    "V1EpisodesIdStreamGet200ResponseEpisode",
+    "V1EpisodesIdStreamGet200ResponseSourcesInner",
+    "V1EpisodesIdStreamGet200ResponseSubtitlesInner",
+    "V1ProtectedSampleGet200Response",
+    "V1ProtectedSampleGet200ResponseUser",
+    "V1ProtectedSampleGet401Response",
+    "V1UploadHlsPost200Response",
+    "V1UploadHlsPost200ResponseData",
+    "V1UploadImagePost200Response",
+    "V1UploadImagePost200ResponseData",
+    "V1UserHistoryGet200Response",
+    "V1UserHistoryGet200ResponseDataInner",
+    "V1UserHistoryPostRequest",
+    "V1UserProfileGet200Response",
+    "V1UserProfileGet200ResponseData",
+    "V1UserProfileGet200ResponseDataActivity",
+    "V1UserSettingsGet200Response",
+    "V1UserSettingsGet200ResponseData",
+    "V1UserSettingsGet200ResponseDataNotifications",
+    "V1UserSettingsGet200ResponseDataPlayer",
+    "V1UserSettingsPatch200Response",
+    "V1UserSettingsPatchRequest",
+    "V1UserSettingsPatchRequestNotifications",
+    "V1UserSettingsPatchRequestPlayer",
+    "V1UserSettingsPatchRequestProfile",
+    "V1UserWatchlistAnimeIdPatchRequest",
+    "V1UserWatchlistGet200Response",
+    "V1UserWatchlistGet200ResponseDataInner",
+    "V1UserWatchlistPostRequest",
+]
+
+# import apis into sdk package
+from shionstream_sdk.api.anime_api import AnimeApi as AnimeApi
+from shionstream_sdk.api.comments_api import CommentsApi as CommentsApi
+from shionstream_sdk.api.dashboard_api import DashboardApi as DashboardApi
+from shionstream_sdk.api.episodes_api import EpisodesApi as EpisodesApi
+from shionstream_sdk.api.sample_api import SampleApi as SampleApi
+from shionstream_sdk.api.system_api import SystemApi as SystemApi
+from shionstream_sdk.api.upload_api import UploadApi as UploadApi
+from shionstream_sdk.api.user_api import UserApi as UserApi
+
+# import ApiClient
+from shionstream_sdk.api_response import ApiResponse as ApiResponse
+from shionstream_sdk.api_client import ApiClient as ApiClient
+from shionstream_sdk.configuration import Configuration as Configuration
+from shionstream_sdk.exceptions import OpenApiException as OpenApiException
+from shionstream_sdk.exceptions import ApiTypeError as ApiTypeError
+from shionstream_sdk.exceptions import ApiValueError as ApiValueError
+from shionstream_sdk.exceptions import ApiKeyError as ApiKeyError
+from shionstream_sdk.exceptions import ApiAttributeError as ApiAttributeError
+from shionstream_sdk.exceptions import ApiException as ApiException
+
+# import models into sdk package
+from shionstream_sdk.models.health_get200_response import HealthGet200Response as HealthGet200Response
+from shionstream_sdk.models.health_get500_response import HealthGet500Response as HealthGet500Response
+from shionstream_sdk.models.v1_anime_get200_response import V1AnimeGet200Response as V1AnimeGet200Response
+from shionstream_sdk.models.v1_anime_get200_response_data_inner import V1AnimeGet200ResponseDataInner as V1AnimeGet200ResponseDataInner
+from shionstream_sdk.models.v1_anime_get200_response_pagination import V1AnimeGet200ResponsePagination as V1AnimeGet200ResponsePagination
+from shionstream_sdk.models.v1_anime_slug_episodes_get200_response import V1AnimeSlugEpisodesGet200Response as V1AnimeSlugEpisodesGet200Response
+from shionstream_sdk.models.v1_anime_slug_episodes_get200_response_anime import V1AnimeSlugEpisodesGet200ResponseAnime as V1AnimeSlugEpisodesGet200ResponseAnime
+from shionstream_sdk.models.v1_anime_slug_episodes_get200_response_data_inner import V1AnimeSlugEpisodesGet200ResponseDataInner as V1AnimeSlugEpisodesGet200ResponseDataInner
+from shionstream_sdk.models.v1_anime_slug_get200_response import V1AnimeSlugGet200Response as V1AnimeSlugGet200Response
+from shionstream_sdk.models.v1_anime_slug_get200_response_data import V1AnimeSlugGet200ResponseData as V1AnimeSlugGet200ResponseData
+from shionstream_sdk.models.v1_anime_slug_get200_response_data_genres_inner import V1AnimeSlugGet200ResponseDataGenresInner as V1AnimeSlugGet200ResponseDataGenresInner
+from shionstream_sdk.models.v1_anime_slug_get200_response_data_schedule import V1AnimeSlugGet200ResponseDataSchedule as V1AnimeSlugGet200ResponseDataSchedule
+from shionstream_sdk.models.v1_anime_slug_get200_response_data_trending_stats import V1AnimeSlugGet200ResponseDataTrendingStats as V1AnimeSlugGet200ResponseDataTrendingStats
+from shionstream_sdk.models.v1_comments_get200_response import V1CommentsGet200Response as V1CommentsGet200Response
+from shionstream_sdk.models.v1_comments_get200_response_data_inner import V1CommentsGet200ResponseDataInner as V1CommentsGet200ResponseDataInner
+from shionstream_sdk.models.v1_comments_id_like_post200_response import V1CommentsIdLikePost200Response as V1CommentsIdLikePost200Response
+from shionstream_sdk.models.v1_comments_id_like_post_request import V1CommentsIdLikePostRequest as V1CommentsIdLikePostRequest
+from shionstream_sdk.models.v1_comments_id_report_post_request import V1CommentsIdReportPostRequest as V1CommentsIdReportPostRequest
+from shionstream_sdk.models.v1_comments_post201_response import V1CommentsPost201Response as V1CommentsPost201Response
+from shionstream_sdk.models.v1_comments_post_request import V1CommentsPostRequest as V1CommentsPostRequest
+from shionstream_sdk.models.v1_dashboard_anime_get200_response import V1DashboardAnimeGet200Response as V1DashboardAnimeGet200Response
+from shionstream_sdk.models.v1_dashboard_categories_get200_response import V1DashboardCategoriesGet200Response as V1DashboardCategoriesGet200Response
+from shionstream_sdk.models.v1_dashboard_categories_get200_response_categories_inner import V1DashboardCategoriesGet200ResponseCategoriesInner as V1DashboardCategoriesGet200ResponseCategoriesInner
+from shionstream_sdk.models.v1_dashboard_categories_get200_response_genres_inner import V1DashboardCategoriesGet200ResponseGenresInner as V1DashboardCategoriesGet200ResponseGenresInner
+from shionstream_sdk.models.v1_dashboard_episodes_get200_response import V1DashboardEpisodesGet200Response as V1DashboardEpisodesGet200Response
+from shionstream_sdk.models.v1_dashboard_moderation_get200_response import V1DashboardModerationGet200Response as V1DashboardModerationGet200Response
+from shionstream_sdk.models.v1_dashboard_moderation_get200_response_reports_inner import V1DashboardModerationGet200ResponseReportsInner as V1DashboardModerationGet200ResponseReportsInner
+from shionstream_sdk.models.v1_dashboard_moderation_get200_response_reports_inner_author import V1DashboardModerationGet200ResponseReportsInnerAuthor as V1DashboardModerationGet200ResponseReportsInnerAuthor
+from shionstream_sdk.models.v1_dashboard_moderation_get200_response_reports_inner_reporter import V1DashboardModerationGet200ResponseReportsInnerReporter as V1DashboardModerationGet200ResponseReportsInnerReporter
+from shionstream_sdk.models.v1_dashboard_moderation_id_patch_request import V1DashboardModerationIdPatchRequest as V1DashboardModerationIdPatchRequest
+from shionstream_sdk.models.v1_dashboard_overview_get200_response import V1DashboardOverviewGet200Response as V1DashboardOverviewGet200Response
+from shionstream_sdk.models.v1_dashboard_overview_get200_response_notifications_inner import V1DashboardOverviewGet200ResponseNotificationsInner as V1DashboardOverviewGet200ResponseNotificationsInner
+from shionstream_sdk.models.v1_dashboard_overview_get200_response_recent_activities_inner import V1DashboardOverviewGet200ResponseRecentActivitiesInner as V1DashboardOverviewGet200ResponseRecentActivitiesInner
+from shionstream_sdk.models.v1_dashboard_overview_get200_response_traffic_data_inner import V1DashboardOverviewGet200ResponseTrafficDataInner as V1DashboardOverviewGet200ResponseTrafficDataInner
+from shionstream_sdk.models.v1_dashboard_roles_get200_response import V1DashboardRolesGet200Response as V1DashboardRolesGet200Response
+from shionstream_sdk.models.v1_dashboard_roles_get200_response_roles_inner import V1DashboardRolesGet200ResponseRolesInner as V1DashboardRolesGet200ResponseRolesInner
+from shionstream_sdk.models.v1_dashboard_seasons_get200_response import V1DashboardSeasonsGet200Response as V1DashboardSeasonsGet200Response
+from shionstream_sdk.models.v1_dashboard_seasons_get200_response_seasons_inner import V1DashboardSeasonsGet200ResponseSeasonsInner as V1DashboardSeasonsGet200ResponseSeasonsInner
+from shionstream_sdk.models.v1_dashboard_stats_get200_response import V1DashboardStatsGet200Response as V1DashboardStatsGet200Response
+from shionstream_sdk.models.v1_dashboard_stats_get200_response_stats import V1DashboardStatsGet200ResponseStats as V1DashboardStatsGet200ResponseStats
+from shionstream_sdk.models.v1_dashboard_users_get200_response import V1DashboardUsersGet200Response as V1DashboardUsersGet200Response
+from shionstream_sdk.models.v1_dashboard_users_get200_response_users_inner import V1DashboardUsersGet200ResponseUsersInner as V1DashboardUsersGet200ResponseUsersInner
+from shionstream_sdk.models.v1_episodes_id_stream_get200_response import V1EpisodesIdStreamGet200Response as V1EpisodesIdStreamGet200Response
+from shionstream_sdk.models.v1_episodes_id_stream_get200_response_audio_inner import V1EpisodesIdStreamGet200ResponseAudioInner as V1EpisodesIdStreamGet200ResponseAudioInner
+from shionstream_sdk.models.v1_episodes_id_stream_get200_response_episode import V1EpisodesIdStreamGet200ResponseEpisode as V1EpisodesIdStreamGet200ResponseEpisode
+from shionstream_sdk.models.v1_episodes_id_stream_get200_response_sources_inner import V1EpisodesIdStreamGet200ResponseSourcesInner as V1EpisodesIdStreamGet200ResponseSourcesInner
+from shionstream_sdk.models.v1_episodes_id_stream_get200_response_subtitles_inner import V1EpisodesIdStreamGet200ResponseSubtitlesInner as V1EpisodesIdStreamGet200ResponseSubtitlesInner
+from shionstream_sdk.models.v1_protected_sample_get200_response import V1ProtectedSampleGet200Response as V1ProtectedSampleGet200Response
+from shionstream_sdk.models.v1_protected_sample_get200_response_user import V1ProtectedSampleGet200ResponseUser as V1ProtectedSampleGet200ResponseUser
+from shionstream_sdk.models.v1_protected_sample_get401_response import V1ProtectedSampleGet401Response as V1ProtectedSampleGet401Response
+from shionstream_sdk.models.v1_upload_hls_post200_response import V1UploadHlsPost200Response as V1UploadHlsPost200Response
+from shionstream_sdk.models.v1_upload_hls_post200_response_data import V1UploadHlsPost200ResponseData as V1UploadHlsPost200ResponseData
+from shionstream_sdk.models.v1_upload_image_post200_response import V1UploadImagePost200Response as V1UploadImagePost200Response
+from shionstream_sdk.models.v1_upload_image_post200_response_data import V1UploadImagePost200ResponseData as V1UploadImagePost200ResponseData
+from shionstream_sdk.models.v1_user_history_get200_response import V1UserHistoryGet200Response as V1UserHistoryGet200Response
+from shionstream_sdk.models.v1_user_history_get200_response_data_inner import V1UserHistoryGet200ResponseDataInner as V1UserHistoryGet200ResponseDataInner
+from shionstream_sdk.models.v1_user_history_post_request import V1UserHistoryPostRequest as V1UserHistoryPostRequest
+from shionstream_sdk.models.v1_user_profile_get200_response import V1UserProfileGet200Response as V1UserProfileGet200Response
+from shionstream_sdk.models.v1_user_profile_get200_response_data import V1UserProfileGet200ResponseData as V1UserProfileGet200ResponseData
+from shionstream_sdk.models.v1_user_profile_get200_response_data_activity import V1UserProfileGet200ResponseDataActivity as V1UserProfileGet200ResponseDataActivity
+from shionstream_sdk.models.v1_user_settings_get200_response import V1UserSettingsGet200Response as V1UserSettingsGet200Response
+from shionstream_sdk.models.v1_user_settings_get200_response_data import V1UserSettingsGet200ResponseData as V1UserSettingsGet200ResponseData
+from shionstream_sdk.models.v1_user_settings_get200_response_data_notifications import V1UserSettingsGet200ResponseDataNotifications as V1UserSettingsGet200ResponseDataNotifications
+from shionstream_sdk.models.v1_user_settings_get200_response_data_player import V1UserSettingsGet200ResponseDataPlayer as V1UserSettingsGet200ResponseDataPlayer
+from shionstream_sdk.models.v1_user_settings_patch200_response import V1UserSettingsPatch200Response as V1UserSettingsPatch200Response
+from shionstream_sdk.models.v1_user_settings_patch_request import V1UserSettingsPatchRequest as V1UserSettingsPatchRequest
+from shionstream_sdk.models.v1_user_settings_patch_request_notifications import V1UserSettingsPatchRequestNotifications as V1UserSettingsPatchRequestNotifications
+from shionstream_sdk.models.v1_user_settings_patch_request_player import V1UserSettingsPatchRequestPlayer as V1UserSettingsPatchRequestPlayer
+from shionstream_sdk.models.v1_user_settings_patch_request_profile import V1UserSettingsPatchRequestProfile as V1UserSettingsPatchRequestProfile
+from shionstream_sdk.models.v1_user_watchlist_anime_id_patch_request import V1UserWatchlistAnimeIdPatchRequest as V1UserWatchlistAnimeIdPatchRequest
+from shionstream_sdk.models.v1_user_watchlist_get200_response import V1UserWatchlistGet200Response as V1UserWatchlistGet200Response
+from shionstream_sdk.models.v1_user_watchlist_get200_response_data_inner import V1UserWatchlistGet200ResponseDataInner as V1UserWatchlistGet200ResponseDataInner
+from shionstream_sdk.models.v1_user_watchlist_post_request import V1UserWatchlistPostRequest as V1UserWatchlistPostRequest
+
